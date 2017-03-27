@@ -10,12 +10,14 @@ import java.util.stream.Collectors;
  */
 public class TournamentReport {
 
+    private Long id;
     private String name;
     private Long ageMin;
     private Long ageMax;
     private List<GroupReport> groups;
 
     public TournamentReport(TournamentEntity t) {
+        this.id = t.getId();
         this.name = t.getName();
         this.ageMin = t.getAgeMin();
         this.ageMax = t.getAgeMax();
@@ -26,6 +28,14 @@ public class TournamentReport {
     }
 
     public TournamentReport() {
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public List<GroupReport> getGroups() {

@@ -1,0 +1,33 @@
+body{
+  font-family: font-family: "Raleway", sans-serif;
+}
+.myNavbar{
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important;
+}
+.groupsLink{
+  text-decoration: none;
+}
+.groupsLink:hover{
+  color: black;
+}
+.groupName{
+  float : right;
+  font-size : xx-large;
+  display: block;
+  width: 51px;
+  height : 51px;
+  text-align: center;
+  vertical-align: middle;
+  border-radius : 2%;
+  background : white;
+  color: #4caf50;
+  -webkit-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.5);
+  box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.5);
+}
+.groupName:hover{
+  color: green;
+  -webkit-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 6px 0px rgba(255,255,255,0.75);
+}

@@ -1,6 +1,10 @@
 package lt.junior.football.group;
 
 import lt.junior.football.score.ScoreEntity;
+import lt.junior.football.team.TeamReport;
+
+import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * Created by Pavel on 2017-03-21.
@@ -13,6 +17,7 @@ public class GroupReport {
     private Long tournamentId;
     private Long numberOfGames;
     private Long numberOfTeams;
+    private List<TeamReport> teams;
 
     public GroupReport() {
     }
@@ -30,7 +35,22 @@ public class GroupReport {
                     .map(ScoreEntity::getTeam)
                     .distinct()
                     .count();
+            this.teams = group.getGames()
+                    .stream()
+                    .flatMap(g->g.getScores().stream())
+                    .map(ScoreEntity::getTeam)
+                    .distinct()
+                    .map(TeamReport::new)
+                    .collect(Collectors.toList());
         }
+    }
+
+    public List<TeamReport> getTeams() {
+        return teams;
+    }
+
+    public void setTeams(List<TeamReport> teams) {
+        this.teams = teams;
     }
 
     public Long getId() {

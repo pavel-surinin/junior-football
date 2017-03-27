@@ -27,17 +27,17 @@ public class DataPreloader {
 
     public void loadTournaments() {
         TournamentEntity t10 = new TournamentEntity();
-        t10.setName("Vaikų nuo 10 -13 metų turnyras");
+        t10.setName("Vaikų turnyras");
         t10.setAgeMin(10L);
         t10.setAgeMax(13L);
         tournamentService.save(t10);
         TournamentEntity t13 = new TournamentEntity();
-        t13.setName("Maištininkų nuo 13 - 16 metų turnyras");
+        t13.setName("Maištininkų turnyras");
         t13.setAgeMin(13L);
         t13.setAgeMax(16L);
         tournamentService.save(t13);
         TournamentEntity t18 = new TournamentEntity();
-        t18.setName("Jaunių nuo 16 - 18 metų turnyras");
+        t18.setName("Jaunių turnyras");
         t18.setAgeMin(16L);
         t18.setAgeMax(18L);
         tournamentService.save(t18);
