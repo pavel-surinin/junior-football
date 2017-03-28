@@ -5,11 +5,44 @@ body{
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important;
 }
 .groupsLink{
+  display: block;
+  box-sizing: border-box;
+  color: black;
+  padding-left: 0px;
   text-decoration: none;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 .groupsLink:hover{
-  color: black;
+  color: green;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
+
+.groupsDetailsLink{
+  display: block;
+  box-sizing: border-box;
+  color: black;
+  padding-left: 0px;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.groupsDetailsLink:hover{
+  padding-left: 5px;
+  color: green;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
 .groupName{
   float : right;
   font-size : xx-large;
@@ -30,4 +63,118 @@ body{
   -webkit-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
   box-shadow: 0px 0px 6px 0px rgba(255,255,255,0.75);
+}
+.createTourLink{
+  color: green;
+  position: relative;
+  top: -16px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.createTourLink:hover{
+  padding-left: 10px;
+}
+.createTour{
+  visibility: collapse;
+  background: none;
+  height : 0%;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.createTour > div{
+  height: 0px;
+  visibility: collapse;
+}
+
+.ctOpen{
+  visibility: visible;
+  background: white;
+  margin-bottom: 15px;
+  height: 100%;
+}
+
+.ctOpen > div {
+  visibility: visible;
+  display: block;
+  box-sizing: border-box;
+  height: 100%;
+  padding: 15px;
+
+}
+.inline-48{
+  display: inline-block;
+  width: 48%;
+  margin-right: 10px;
+}
+.inline-20{
+  display: inline-block;
+  width: 18%;
+  margin-right: 10px;
+}
+
+form{
+  display: initial;
+}
+/*TEAMS*/
+div.teamThumbnail{
+  color: #43613b;
+  display: inline-block;
+  height: 120px;
+  width: 120px;
+  vertical-align: text-top;
+  padding: 3px;
+  text-align: center;
+  font-size: 13px;
+}
+div.teamThumbnail > a{
+  color: green;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+div.teamThumbnail > a:hover{
+  color:red;
+  text-decoration: none;
+}
+
+.team-create-tabs > li{
+  width: 25%;
+}
+
+.team-create-tabs > li > a{
+  border-radius: 0px;
+}
+
+.team-create-content{
+  border-left: 1px solid #dddddd;
+  border-right: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  padding: 15px;
+  background: white;
+}
+.px100px{
+  width: 100px;
+}
+.px150px{
+  width: 150px;
+}
+.px250px{
+  width: 250px;
+}
+.px200px{
+  width: 200px;
+}
+.inline{
+  display: inline-block;
+  margin: 5px 5px;
+}
+.team-create-content > div > h6{
+  margin-bottom: 2px;
 }

@@ -11,6 +11,7 @@ import java.util.List;
  * Created by Pavel on 2017-03-21.
  */
 @RestController
+@CrossOrigin(origins = "*")
 public class TeamController {
 
     @Autowired

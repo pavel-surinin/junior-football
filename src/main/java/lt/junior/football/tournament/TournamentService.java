@@ -64,7 +64,7 @@ public class TournamentService {
         int numberTeamsInGroup = 4;
         int leftTeams = Math.floorMod(numberOfTeams, numberTeamsInGroup);
         int numberOfGroups = (numberOfTeams-leftTeams) / (numberTeamsInGroup);
-        String groupNames = "ABCDEFGHIJKLMNOPSTUVXYZ";
+        String groupNames = "ABCDEFGHIJKLMNOPRSTUVXYZ";
         for (int i = 0; i < numberOfGroups; i++) {
 //            System.out.println(groupNames.substring(i,i+1));
             GroupEntity group = new GroupEntity();
