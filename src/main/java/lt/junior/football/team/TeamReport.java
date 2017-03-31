@@ -13,6 +13,8 @@ public class TeamReport {
     private Long id;
     private String name;
     private List<PlayerReport> players;
+    private LogoEntity logo;
+    private ContactsEntity contacts;
 
     public TeamReport(TeamEntity team) {
         this.id = team.getId();
@@ -20,9 +22,27 @@ public class TeamReport {
         if (!team.getPlayers().isEmpty()) {
             this.players = team.getPlayers().stream().map(PlayerReport::new).collect(Collectors.toList());
         }
+        this.logo = team.getLogo();
+        this.contacts = team.getContacts();
     }
 
     public TeamReport() {
+    }
+
+    public ContactsEntity getContacts() {
+        return contacts;
+    }
+
+    public void setContacts(ContactsEntity contacts) {
+        this.contacts = contacts;
+    }
+
+    public LogoEntity getLogo() {
+        return logo;
+    }
+
+    public void setLogo(LogoEntity logo) {
+        this.logo = logo;
     }
 
     public Long getId() {

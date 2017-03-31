@@ -10,6 +10,7 @@ var TournamentsContainer = require("../containers/TournamentsContainer");
 var TournamentContainer = require("../containers/TournamentContainer");
 var TeamListContainer = require("../containers/TeamListContainer");
 var TeamCreateContainer = require("../containers/TeamCreateContainer");
+var TeamContainer = require("../containers/TeamContainer");
 
 var routes = (
   <Router history={hashHistory}>
@@ -19,6 +20,7 @@ var routes = (
       <Route path='tournament/:id' component={TournamentContainer}/>
       <Route path='team' component={TeamListContainer}/>
       <Route path='team/create' component={TeamCreateContainer}/>
+      <Route path='team/:id' component={TeamContainer}/>
     </Route>
   </Router>
 );

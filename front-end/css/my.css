@@ -133,11 +133,15 @@ div.teamThumbnail{
   font-size: 13px;
 }
 div.teamThumbnail > a{
-  color: green;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  clear: both;
+  display: block;
+  color: #003300;
+  font-weight: bold;
+  font-size: 14px;
 }
 div.teamThumbnail > a:hover{
   color:red;
@@ -149,9 +153,20 @@ div.teamThumbnail > a:hover{
 }
 
 .team-create-tabs > li > a{
+  box-sizing: border-box;
   border-radius: 0px;
-}
+  cursor: context-menu;
+  text-align: center;
+  margin: 0px;
+  margin-bottom: 0px;
 
+
+}
+.team-create-tabs > li > a:hover{
+  background: inherit;
+  border: none;
+  margin-bottom: 0px;
+}
 .team-create-content{
   border-left: 1px solid #dddddd;
   border-right: 1px solid #dddddd;
@@ -177,4 +192,95 @@ div.teamThumbnail > a:hover{
 }
 .team-create-content > div > h6{
   margin-bottom: 2px;
+}
+
+.my-alert{
+  border-radius: 0px;
+  margin: 10px 0px;
+  padding: 0px;
+}
+.my-alert > i{
+  background: #c72f35;
+  padding: 11px 15px;
+  color: #f2dede;
+  font-size: 17px;
+}
+.my-alert > span{
+  padding: 12px;
+}
+.icons-modal{
+  width: 95%;
+  margin: auto;
+}
+.logo-letter{
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: bold;
+  top: 0;
+  left: 0px;
+}
+.logo-change{
+  background: rgba(86, 154, 71, 0.19);
+  margin: 3px;
+  border-radius: 2px;
+  padding: 4px;
+  display: inline-table;
+  width: 50px;
+}
+.logo-change:hover{
+  background: rgba(86, 154, 71, 0.8);
+  cursor: pointer;
+}
+.logo-color{
+  width: 50px;
+  margin: 3px;
+  height: 41px;
+  border: none;
+  border-radius: 2px;
+  background: #dfecdc;
+}
+.logo-color-list{
+  background: whitesmoke;
+  min-width: 73%;
+  border-radius: 0px;
+  margin-top: -1px;
+  border-color: #5da937;
+}
+.logo-color-list > li{
+  display: inline;
+}
+.logo-top-initials-icon{
+  display: block;
+  width: 106px;
+  font-family: inherit;
+  background: #d7e4d4;
+}
+.logo-none{
+  display: none;
+}
+.logo-text-s5{
+  font-size: 0.4em;
+}
+.logo-text-s4{
+  font-size: 0.5em;
+}
+.logo-text-s3{
+  font-size: 0.7em;
+}
+.logo-text-s1{
+  font-size: 1em;
+}
+.logo-shadow{
+  text-shadow: 0px 0px 2px #7b7b7b;
+}
+.logo-preview{
+  display: inline-block;
+  background: #f7fcf5;
+  padding: 20px;
+}
+.margin-tr{
+  margin: 5px 5px 0px 0px;
 }

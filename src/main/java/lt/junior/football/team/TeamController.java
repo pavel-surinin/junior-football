@@ -1,7 +1,5 @@
 package lt.junior.football.team;
 
-import lt.junior.football.group.GroupEntity;
-import lt.junior.football.group.GroupReport;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -31,4 +29,10 @@ public class TeamController {
     public TeamReport findById(@PathVariable Long id){
         return service.findById(id);
     }
+
+    @GetMapping("/team/icons")
+    public List<String> findById(){
+        return service.getIcons();
+    }
+
 }

@@ -26,6 +26,28 @@ public class TeamEntity {
     @OneToMany(mappedBy = "team", cascade = CascadeType.REMOVE)
     private List<ScoreEntity> scores;
 
+    @OneToOne(cascade = CascadeType.ALL)
+    private LogoEntity logo;
+
+    @OneToOne(cascade = CascadeType.ALL)
+    private ContactsEntity contacts;
+
+    public ContactsEntity getContacts() {
+        return contacts;
+    }
+
+    public void setContacts(ContactsEntity contacts) {
+        this.contacts = contacts;
+    }
+
+    public LogoEntity getLogo() {
+        return logo;
+    }
+
+    public void setLogo(LogoEntity logo) {
+        this.logo = logo;
+    }
+
     public List<ScoreEntity> getScores() {
         return scores;
     }

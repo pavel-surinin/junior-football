@@ -1,5 +1,6 @@
 var React = require('react');
 var PropTypes = React.PropTypes;
+var TeamLogo = require('../components/TeamLogo.js');
 function mapTeams(self) {
   var items = self.props.teams;
     items.sort(function(a, b) {
@@ -16,6 +17,16 @@ function mapTeams(self) {
   var teams = items.map(function(t,idx){
     return (
       <div className='teamThumbnail' key={idx}>
+          <TeamLogo
+            size={2}
+            logoBg={t.logo.logoBg}
+            logoBgStyle={t.logo.logoBgStyle}
+            logoTop={t.logo.logoTop}
+            logoTopStyle={t.logo.logoTopStyle}
+            logoTextStyle={t.logo.logoTextStyle}
+            logoTextSizeStyle={t.logo.logoTextSizeStyle}
+            logoText={t.logo.logoText}
+          />
         <a href={'#/team/' + t.id}>{t.name}</a>
       </div>);
   });
