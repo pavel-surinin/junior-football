@@ -147,7 +147,21 @@ div.teamThumbnail > a:hover{
   color:red;
   text-decoration: none;
 }
-
+.team-contacts{
+  display: inline-block;
+ margin-top: 3px;
+}
+.team-header > div{
+  display: inline-table;
+  position: absolute;
+  top: 0;
+  top: -6px;
+  left: 148px;
+}
+.team-contacts > p{
+  font-size: 12px;
+  margin: 1px;
+}
 .team-create-tabs > li{
   width: 25%;
 }
@@ -159,8 +173,6 @@ div.teamThumbnail > a:hover{
   text-align: center;
   margin: 0px;
   margin-bottom: 0px;
-
-
 }
 .team-create-tabs > li > a:hover{
   background: inherit;
@@ -283,4 +295,7 @@ div.teamThumbnail > a:hover{
 }
 .margin-tr{
   margin: 5px 5px 0px 0px;
+}
+.inline{
+  display: inline;
 }
